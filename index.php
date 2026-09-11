@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Dados do Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <h1>Dados do Cliente</h1>
