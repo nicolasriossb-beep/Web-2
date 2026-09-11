@@ -1,64 +1,41 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
 body {
-    background-color: #f0f2f5;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 50px;
+}
+form {
+    background: white;
     padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
 }
-
-
-.bloco {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
 }
-
-
-.bloco h1 {
-    text-align: center;
-    color: #333333;
-    margin-bottom: 24px;
-    font-size: 24px;
-}
-
-
-.bloco > div {
-    margin-bottom: 16px;
-}
-
-
-.bloco label {
+label {
     display: block;
-    margin-bottom: 6px;
-    color: #555555;
-    font-weight: 600;
-    font-size: 14px;
+    margin-bottom: 5px;
 }
-
-
-.bloco input {
+input[type="email"] {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    font-size: 16px;
-    transition: border-color 0.2s;
-    outline: none;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box; /* Garante que o campo não passe do limite da caixa */
 }
-
-
-.bloco input:focus {
-    border-color: #0066cc;
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+.sucesso {
+    color: green;
+    margin-bottom: 15px;
 }
