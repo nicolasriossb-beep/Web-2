@@ -17,10 +17,20 @@
             echo "<p><strong>Email recebido:</strong> " . $email . "</p>";
         } 
         ?>
+        <?php 
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $senha = htmlspecialchars($_POST["senha"]);
+            echo "<p><strong>Senha recebida:</strong> " . $senha . "</p>";
+        } 
+        ?>
         
         <!-- Campo para informar o e-mail -->
         <label for="email">E-mail:</label><br>
         <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" required>
         <br><br>
         
         <!-- Botão para enviar o formulário -->
